@@ -1,0 +1,67 @@
+<!doctype html>
+
+<html><head>
+
+<title>SVG Test</title>
+<meta charset="utf-8">
+
+<style>
+  .hidden {
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+
+  a {
+    background-color: #98fb98;
+    color: #ff69b4;
+    display: inline-block;
+    height: 100px;
+    transition: color 200ms;
+    width: 100px;
+  }
+
+  a:hover {
+    color: #000;
+  }
+
+  svg {
+    fill: currentColor;
+    height: inherit;
+    width: inherit;
+  }
+</style>
+
+</head><body>
+
+<div class="hidden">
+  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <symbol viewBox="0 0 48 48" id="geluid-aan">
+      <path d="M30.688 18.727C30.701 18.75 32 21.142 32 24c0 2.858-1.299 5.248-1.31 5.268l2.62 1.463C33.379 30.608 35 27.663 35 24c0-3.662-1.621-6.607-1.69-6.73l-2.622 1.459zM24.5 32.855v-17.71l-7 5.666v6.378l7 5.666zM11 26h3.5v-4H11v4zm13.851 11l-9.882-8H11c-1.654 0-3-1.346-3-3v-4c0-1.654 1.346-3 3-3h3.969l9.882-8H27.5v26h-2.649zM41 24c0 6.938-3.06 12.498-3.19 12.731l-2.62-1.462c.027-.05 2.81-5.137 2.81-11.27 0-6.13-2.783-11.218-2.811-11.27l2.621-1.46c.13.232 3.19 5.793 3.19 12.73z"/>
+    </symbol>
+    <symbol viewBox="0 0 48 48" id="home">
+      <path d="M24 8L6 23.875l1.985 2.25 4.01-3.536V40h17.007v-2.999H14.996V19.942L24 12.001l10.003 8.824V40h3.003V23.471l3.009 2.654L42 23.875l-4.994-4.404v-7.47h-3.003v4.823L24 8zm-4.002 24h9.005v-6.5h-9.005V32z"/>
+    </symbol>
+  </svg>
+</div>
+
+<a href="https://www.ponydesignclub.nl/" target="_blank">
+  <svg>
+    <title>Pony Design Club</title>
+    <use xlink:href="#geluid-aan"></use>
+  </svg>
+</a>
+
+<a href="https://www.ponydesignclub.nl/" target="_blank">
+  <svg>
+    <title>Pony Design Club</title>
+    <use xlink:href="#home"></use>
+  </svg>
+</a>
+
+</body></html>
